@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header" id="header">
+        <nav id="menu">
+            
+            <img class="name" src="./assets/Porsche_wordmark.png">
+            <div>
+                <ul class="links">
+                    <li><a href="#home" id="home">Home</a></li>
+                    <li><a href="#718" id="porsche718">718</a></li>
+                    <li><a href="#911" id="porsche911">911</a></li>
+                    <li><a href="#taycan" id="taycan">Taycan</a></li>
+                    <li><a href="#macan" id="macan">Macan</a></li>
+                    <li><a href="#cayenne" id="cayenne">Cayenne</a></li>
+                    <li><a href="#panamera" id="panamera">Panamera</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav> 
+    </div> 
+
+    <section>
+        <div class="info">
+            <div class="line"></div>
+            <div>    
+                <h2>PORSCHE</h2>
+                <h2 id="model">There Is No Substitute</h2>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        var header=document.getElementById("header")
+        var home=document.getElementById("home")
+        var porsche718=document.getElementById("porsche718")
+        var porsche911=document.getElementById("porsche911")
+        var taycan=document.getElementById("taycan")
+        var macan=document.getElementById("macan")
+        var cayenne=document.getElementById("cayenne")
+        var panamera=document.getElementById("panamera")
+        var models=document.getElementById("model")
+
+        home.onclick=function(){
+            header.style.backgroundImage="url(./assets/123.jpeg)"
+            model.innerHTML="There Is No Substitute"
+        }
+        porsche718.onclick=function(){
+            header.style.backgroundImage="url(./assets/718.png)"
+            model.innerHTML="718"
+        }
+        porsche911.onclick=function(){
+            header.style.backgroundImage="url(./assets/911.jpeg)"
+            model.innerHTML="911 GT3 RS"
+        }
+        taycan.onclick=function(){
+            header.style.backgroundImage="url(./assets/taycan.jpeg)"
+            model.innerHTML="TAYCAN"
+        }
+        macan.onclick=function(){
+            header.style.backgroundImage="url(./assets/macan.jpeg)"
+            model.innerHTML="MACAN"
+        }
+        cayenne.onclick=function(){
+            header.style.backgroundImage="url(./assets/cayenne.png)"
+            model.innerHTML="CAYENNE"
+        }
+        panamera.onclick=function(){
+            header.style.backgroundImage="url(./assets/panamera.png)"
+            model.innerHTML="PANAMERA"
+        }
+    </script>
+</body>
+</html>
